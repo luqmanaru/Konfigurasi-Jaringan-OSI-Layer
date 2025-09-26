@@ -18,3 +18,10 @@ exit
 interface fa0/1
 switchport mode trunk
 end
+
+enable
+configure terminal
+hostname SW1-2950
+interface range fa0/1-24
+no shutdown
+exit
