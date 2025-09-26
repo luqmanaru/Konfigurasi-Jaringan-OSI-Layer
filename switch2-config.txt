@@ -1,0 +1,6 @@
+enable
+configure terminal
+hostname SW2-2950
+interface range fa0/1-24
+no shutdown
+exit
