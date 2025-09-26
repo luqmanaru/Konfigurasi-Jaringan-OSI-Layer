@@ -1,0 +1,20 @@
+enable
+configure terminal
+hostname SW-1
+vlan 10
+name AUDITORIUM_A
+exit
+vlan 20
+name AUDITORIUM_B
+exit
+interface range fa0/2-10
+switchport mode access
+switchport access vlan 10
+exit
+interface range fa0/11-24
+switchport mode access
+switchport access vlan 20
+exit
+interface fa0/1
+switchport mode trunk
+end
